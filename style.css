@@ -1,0 +1,254 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background: #fafafa;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url("./fonts/gilroy-bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Gilroy Regular";
+  src: url("./fonts/gilroy-regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gilroy ExtraBold";
+  src: url("./fonts/gilroy-extrabold.ttf");
+  font-weight: bolder;
+}
+@font-face {
+  font-family: "Gilroy light";
+  src: url("./fonts/gilroy-light.otf");
+  font-weight: light;
+}
+@font-face {
+  font-family: "Gilroy-LightItalic";
+  src: url("./fonts/gilroy-lightitalic.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("./fonts/gilroy-lightitalic.eot?#iefix") format("embedded-opentype"), url("./fonts/gilroy-lightitalic.woff2") format("woff2"), url("./fonts/gilroy-lightitalic.woff") format("woff"), url("./fonts/gilroy-lightitalic.ttf") format("truetype"), url("./fonts/gilroy-lightitalic.svg#gilroy-lightitalic") format("svg");
+  /* Chrome < 4, Legacy iOS */
+}
+body {
+  font-family: "Gilroy Regular";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+  align-items: center;
+}
+header .logo {
+  font-family: "Gilroy ExtraBold";
+  font-size: 28px;
+  color: #000;
+}
+header .navigation {
+  display: flex;
+  justify-content: space-between;
+  max-width: 730px;
+  width: 100%;
+  padding: 28px 0;
+  align-items: center;
+  font-size: 24px;
+  opacity: 0.75;
+}
+header .navigation a {
+  display: block;
+  color: #000;
+  padding: 15px 30px;
+  position: relative;
+  transition: opacity 0.2s;
+}
+header .navigation a::after {
+  content: "";
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  transform: rotate(0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.4s;
+}
+header .navigation a:hover {
+  opacity: 1;
+}
+header .navigation a:hover::after {
+  opacity: 1;
+  transform: rotate(-8.5deg);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.title__home {
+  font-family: "Gilroy Bold";
+  font-size: 144px;
+  line-height: 130%;
+  text-transform: uppercase;
+  display: block;
+  cursor: pointer;
+  pointer-events: none;
+  position: relative;
+  z-index: 1;
+}
+.title__home:nth-child(even) {
+  color: #0353A4;
+}
+.title__home:nth-child(odd) {
+  color: #FD9100;
+}
+.title__home:nth-child(1).hover {
+  color: #000;
+}
+
+.subtitle__home {
+  margin-top: 28px;
+  font-size: 32px;
+  font-family: "Gilroy-LightItalic";
+}
+
+section {
+  position: relative;
+}
+
+.elips {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  width: 637.89px;
+  height: 373.35px;
+  transform: rotate(-13.12deg);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+section .title {
+  font-family: "Gilroy Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 130%;
+  color: #0353A4;
+}
+
+section.portfolio {
+  width: 100%;
+  margin-top: 180px;
+}
+section.portfolio .portfolio-nav {
+  display: flex;
+  flex-direction: row;
+  font-size: 28px;
+  line-height: 130%;
+  margin: 0;
+  padding: 0;
+  margin-top: 52px;
+}
+section.portfolio .portfolio-nav li {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.25);
+  margin-left: 18px;
+  cursor: pointer;
+}
+section.portfolio .portfolio-nav li.active {
+  color: #FB8500;
+}
+section.portfolio .portfolio-nav p {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+section.portfolio .portfolio-nav p::after {
+  content: "";
+  width: 30px;
+  height: 1px;
+  background: #000;
+  margin-left: 12px;
+}
+section.portfolio .palette {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 36px;
+  margin-bottom: 162px;
+}
+section.portfolio .palette .work {
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  text-decoration: none;
+}
+section.portfolio .palette .work.sm {
+  width: 556px;
+}
+section.portfolio .palette .work.lg {
+  width: 830px;
+}
+section.portfolio .palette .work:nth-child(even) {
+  margin-left: 14px;
+}
+section.portfolio .palette .work:hover {
+  transition: box-shadow 0.2s;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+}
