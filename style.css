@@ -158,11 +158,16 @@ header .navigation a:hover::after {
 .title__home:nth-child(even) {
   color: #0353A4;
 }
+.title__home:nth-child(even):hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+}
 .title__home:nth-child(odd) {
   color: #FD9100;
 }
-.title__home:nth-child(1).hover {
-  color: #000;
+.title__home:nth-child(odd):hover {
+  transform: translateX(150px);
 }
 
 .subtitle__home {
@@ -258,3 +263,4 @@ section.portfolio .palette .work:hover {
   transition: box-shadow 0.2s;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
 }
+/*# sourceMappingURL=style.css.map */

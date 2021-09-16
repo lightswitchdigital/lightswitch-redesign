@@ -148,12 +148,19 @@ header{
     z-index: 1;
     &:nth-child(even){
         color: #0353A4;
+        &:hover{
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+            }
+        }
     }
     &:nth-child(odd){
         color: #FD9100;
-    }
-    &:nth-child(1).hover{
-        color: #000;
+        &:hover{
+            transform: translateX(150px);
+        }
     }
 }
 .subtitle__home{
