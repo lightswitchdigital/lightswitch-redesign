@@ -131,6 +131,10 @@ header{
 .container{
     max-width: 1400px;
     margin: 0 auto;
+    @media screen and (max-width: 1440px) {
+        width: calc(100% - 60px);
+        margin: 0 30px;
+    }
 }
 .title__home{
     font-family: 'Gilroy Bold';
