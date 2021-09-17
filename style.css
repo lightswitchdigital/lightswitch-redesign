@@ -206,9 +206,6 @@ section .title {
 section .title.upper {
   text-transform: uppercase;
 }
-section .title.pricing-title {
-  margin-top: 100px;
-}
 
 .pricing-title {
   font-family: "Gilroy Bold";
@@ -218,16 +215,27 @@ section .title.pricing-title {
   line-height: 130%;
   color: #0353A4;
   margin-top: 50px;
+  margin-bottom: 100px;
 }
 .pricing-title.upper {
   text-transform: uppercase;
 }
 
-section.portfolio {
-  width: 100%;
-  margin-top: 180px;
+.portfolio-title {
+  font-family: "Gilroy Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 130%;
+  color: #0353A4;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
-section.portfolio .portfolio-nav {
+.portfolio-title.upper {
+  text-transform: uppercase;
+}
+
+.portfolio-nav {
   display: flex;
   flex-direction: row;
   font-size: 28px;
@@ -236,26 +244,31 @@ section.portfolio .portfolio-nav {
   padding: 0;
   margin-top: 52px;
 }
-section.portfolio .portfolio-nav li {
+.portfolio-nav li {
   list-style: none;
   color: rgba(0, 0, 0, 0.25);
   margin-left: 18px;
   cursor: pointer;
 }
-section.portfolio .portfolio-nav li.active {
+.portfolio-nav li.active {
   color: #FB8500;
 }
-section.portfolio .portfolio-nav p {
+.portfolio-nav p {
   position: relative;
   display: flex;
   align-items: center;
 }
-section.portfolio .portfolio-nav p::after {
+.portfolio-nav p::after {
   content: "";
   width: 30px;
   height: 1px;
   background: #000;
   margin-left: 12px;
+}
+
+section.portfolio {
+  width: 100%;
+  margin-top: 180px;
 }
 section.portfolio .palette {
   width: 100%;
@@ -289,7 +302,7 @@ section.portfolio .palette .work:hover {
 
 section.pricing {
   margin-bottom: 150px;
-  margin-top: 60px;
+  margin-top: 36px;
 }
 section.pricing ul {
   padding: 0;
