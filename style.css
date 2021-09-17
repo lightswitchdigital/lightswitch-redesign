@@ -52,6 +52,10 @@ a {
   text-decoration: none;
 }
 
+*:focus {
+  outline: none;
+}
+
 @font-face {
   font-family: "Gilroy Bold";
   src: url("./fonts/gilroy-bold.ttf");
@@ -343,5 +347,121 @@ section.pricing ul li:hover a {
 section.pricing ul li:hover a img {
   filter: url(#filter_Light);
   transform: rotate(0);
+}
+
+section.contact {
+  margin-bottom: 150px;
+  margin-top: 36px;
+}
+section.contact .title {
+  font-family: "Gilroy Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 130%;
+  color: #0353A4;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+section.contact .title.upper {
+  text-transform: uppercase;
+}
+section.contact .row {
+  display: flex;
+  justify-content: space-between;
+}
+section.contact .row .col {
+  width: 50%;
+}
+section.contact .row .col p {
+  font-size: 28px;
+  line-height: 130%;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 18px;
+}
+section.contact .row .col form .input-group {
+  margin-top: 18px;
+}
+section.contact .row .col form .input-group .input-title {
+  color: rgba(0, 0, 0, 0.15);
+  margin-bottom: 8px;
+}
+section.contact .row .col form .input-group input {
+  width: 100%;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  padding: 18px 25px;
+  background: none;
+  font-size: 28px;
+}
+section.contact .row .col form .input-group textarea {
+  width: 100%;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  padding: 18px 25px;
+  background: none;
+  font-size: 28px;
+  height: 245px;
+  resize: none;
+}
+section.contact .row .col form button {
+  display: block;
+  width: 100%;
+  padding: 25px 0;
+  font-size: 28px;
+  line-height: 130%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  margin-top: 16px;
+}
+section.contact .row .col form button:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transition: all 0.2s;
+}
+section.contact ul.contacts .contacts__title {
+  font-family: "Gilroy Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #000000;
+}
+section.contact ul.contacts li {
+  margin-top: 42px;
+}
+section.contact .quick-search {
+  margin-top: 72px;
+}
+section.contact .quick-search .contacts__title {
+  font-family: "Gilroy Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #000000;
+}
+section.contact .quick-search .btn-map-link {
+  display: block;
+  width: 350px;
+  padding: 25px 0;
+  font-size: 28px;
+  line-height: 130%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  margin-top: 36px;
+}
+section.contact .quick-search .btn-map-link:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transition: all 0.2s;
 }
 /*# sourceMappingURL=style.css.map */
