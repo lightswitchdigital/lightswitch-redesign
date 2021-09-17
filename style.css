@@ -176,6 +176,10 @@ header .navigation a:hover::after {
   font-family: "Gilroy-LightItalic";
 }
 
+.home-section {
+  margin-top: 30px;
+}
+
 section {
   position: relative;
 }
@@ -198,6 +202,25 @@ section .title {
   font-size: 90px;
   line-height: 130%;
   color: #0353A4;
+}
+section .title.upper {
+  text-transform: uppercase;
+}
+section .title.pricing-title {
+  margin-top: 100px;
+}
+
+.pricing-title {
+  font-family: "Gilroy Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 130%;
+  color: #0353A4;
+  margin-top: 50px;
+}
+.pricing-title.upper {
+  text-transform: uppercase;
 }
 
 section.portfolio {
@@ -260,7 +283,52 @@ section.portfolio .palette .work:nth-child(even) {
   margin-left: 14px;
 }
 section.portfolio .palette .work:hover {
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.5s;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+section.pricing {
+  margin-bottom: 150px;
+  margin-top: 60px;
+}
+section.pricing ul {
+  padding: 0;
+  margin: 0;
+}
+section.pricing ul li {
+  transition: background 0.3s;
+  border-top: 1px solid rgba(0, 0, 0, 0.75);
+}
+section.pricing ul li a {
+  font-family: "Gilroy Bold";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 56px;
+  line-height: 130%;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 73px 0;
+  transition: color 0.3s;
+}
+section.pricing ul li a img {
+  width: 95px;
+  height: 78px;
+  filter: url(#filter_Dark);
+  transform: rotate(-45deg);
+  transition: all 0.5s;
+}
+section.pricing ul li:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+}
+section.pricing ul li:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+section.pricing ul li:hover a {
+  color: #fff;
+}
+section.pricing ul li:hover a img {
+  filter: url(#filter_Light);
+  transform: rotate(0);
 }
 /*# sourceMappingURL=style.css.map */
