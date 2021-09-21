@@ -148,6 +148,16 @@ header .navigation a:hover::after {
   }
 }
 
+.letters .letter {
+  transform-origin: 0 90%;
+  display: inline-block;
+  line-height: 0.4em;
+}
+
+.title-moving {
+  overflow: hidden;
+}
+
 .title__home {
   font-family: "Gilroy Bold";
   font-size: 144px;
@@ -464,4 +474,5 @@ section.contact .quick-search .btn-map-link:hover {
   color: #fff;
   transition: all 0.2s;
 }
+
 /*# sourceMappingURL=style.css.map */

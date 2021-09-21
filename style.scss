@@ -139,6 +139,16 @@ header{
         margin: 0 30px;
     }
 }
+.letters {
+    .letter {
+        transform-origin: 0 90%;
+        display: inline-block;
+        line-height: .4em;
+    }
+}
+.title-moving {
+    overflow: hidden;
+}
 .title__home{
     font-family: 'Gilroy Bold';
     font-size: 144px;
