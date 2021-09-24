@@ -178,6 +178,9 @@ header{
     @media screen and (max-width: 850px){
         font-size: 12vw;
     }
+    @media screen and (max-width: 396px){
+        font-size: 11.5vw;
+    }
 }
 @media screen and (max-width: 850px){
     header{
@@ -186,9 +189,12 @@ header{
 }
 
 .mobile-header{
-    padding-top: 30px;
+    padding-top: 50px;
     margin-top: 0;
     display: none;
+    .logo{
+        font-size: 24px;
+    }
     .menu-burger{
         width: 50px;
         height: 50px;
@@ -196,6 +202,7 @@ header{
         position: absolute;
         left: 30px;
         z-index: 120;
+        margin-top: -15px;
         span{
             position: absolute;
             height: 43px;
@@ -240,7 +247,7 @@ header{
         margin-bottom: 70px;
         .menu{
             opacity: 0;
-            transform: translateX(100%);
+            transform: translateX(-100%);
             width: 100vw;
             height: 100vh;
             position: fixed;
@@ -639,6 +646,144 @@ section.contact {
                 }
             }
         }
+}
+.first-section {
+    width: 100%;
+    background: #fff;
+    padding: 150px 0;
+    img{
+        width: 600px;
+        max-width: calc(100% - 60px);
+        margin: 0 auto;
+        display: block;
+    }
+}
+.portfolio-work{
+    padding-bottom: 50px;
+    .back-to-works{
+        font-size: 28px;
+        line-height: 130%;
+        color: rgba(0, 0, 0, 0.25);
+        display: block;
+        margin-top: 30px;
+        img{
+            display: inline-block;
+        }
+    }
+    .screen-block{
+        width: 100%;
+        padding: 175px 0;
+        margin-top: 80px;
+        &.blue{
+            background: rgba(3, 83, 164, 0.25);
+        }
+        &.white{
+            background: #fff;
+        }
+        img{
+            display: block;
+            max-width: calc(100% - 60px);
+            margin: 30px auto;
+            width: fit-content;
+            filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.1));
+        }
+    }
+    .presets-block{
+        width: 100%;
+        padding: 50px 0;
+        margin-top: 80px;
+        background: rgba(3, 83, 164, 0.25);
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .colors{
+            display: flex;
+            flex-wrap: wrap;
+            max-width:720px;
+            margin: -10px;
+            .color{
+                width: 330px;
+                height: 300px;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                position: relative;
+                margin: 10px;
+                span{
+                    position: absolute;
+                    bottom: 12px;
+                    left: 12px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    strong{
+                        display: block;
+                        font-weight: 800;
+                        
+                    }
+                }
+            }
+        }
+        .fonts{
+            *{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                height: 150px;
+                border-bottom: 1px solid #000;
+                width: 620px;
+                box-sizing: border-box;
+            }
+            h1{font-size: 90px;}
+            h2{font-size: 56px;}
+            h2{font-size: 36px;}
+            h4{font-size: 18px;}
+        }
+        @media screen and (max-width: 700px){
+            display: none;
+        }
+    }
+    .text-block{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 70px;
+        .title{
+            width: 50%;
+            font-size: 36px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        .text{
+            font-size: 18px;
+            font-weight: 400;
+            width: 50%;
+            a.link-to-work{
+                display: block;
+                margin-top: 30px;
+                font-size: 18px;
+                font-weight: 400;
+                color: #FB8500;
+            }
+        }
+        @media screen and (max-width: 680px){
+            flex-direction: column;
+            .title{
+                font-size: 20px;
+                width: 100%;
+            }
+            .text{
+                font-size: 16px;
+                width: 100%;
+                a.link-to-work{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 590px){
     .pricing-title.upper{
